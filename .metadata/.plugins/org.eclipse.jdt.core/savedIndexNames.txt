@@ -1,3 +1,0 @@
-INDEX VERSION 1.134+C:\semsoalab\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-342140459.index
