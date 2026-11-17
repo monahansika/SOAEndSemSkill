@@ -1,0 +1,25 @@
+```java
+package com.example.demo.controller;
+
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.*;
+
+import com.example.demo.service.JwtService;
+
+@RestController
+@RequestMapping("/jwt")
+public class JwtController {
+
+    private final JwtService jwtService;
+
+    public JwtController(JwtService jwtService) {
+        this.jwtService = jwtService;
+    }
+
+    @PostMapping("/generate")
+    public String generateToken(@RequestBody Map<String, Object> payload) {
+        return jwtService.generateToken(payload);
+    }
+}
+```
